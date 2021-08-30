@@ -32,6 +32,7 @@ body {
     margin: 0 auto;
   }
   
+  /* navigation */
   .page-navigation {
     grid-row: 1 / span 1;
     display: grid;
@@ -98,12 +99,77 @@ body {
     background-position: center;
     background-size: contain;
   }
-  
+
+  /* main */
   .page-main {
     grid-column: 2 / -1;
     grid-row: 1 / -2; /* элемент с первой линии до предпоследней */
   }
+
+  /* slider */
+  .slider {
+    position: relative;
+    margin-bottom: 35px;
+  }
   
+  .slider-img {
+    box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07);
+    border-radius: 10px;
+  }
+  
+  .slider-description {
+    position: absolute;
+    left: 60px;
+    top: 80px;
+    max-width: 450px;
+  }
+  
+  .slider-headline {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+  }
+  
+ .slider-text {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+ .slider-controls-item {
+    margin-right: 10px;
+  }
+  
+  .slider-controls-item:last-child {
+    margin-right: 0;
+  }
+  
+  .slider-controls-button {
+    background-color: #e8e8eb;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slider-controls-button-active {
+    background-color: #31b768;
+  }
+  
+    /* promo */
   .page-promo {
     grid-row: 2 / -2;
   }
