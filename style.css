@@ -31,3 +31,84 @@ body {
     width: 1380px;
     margin: 0 auto;
   }
+  
+  .page-navigation {
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-rows: 100px 1fr auto;
+    background-color: white;
+    box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07);
+    border-radius: 10px;
+  }
+
+  .page-header-logo {
+    padding: 40px 30px;
+  }  
+
+  .site-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-navigation {
+    list-style: none;
+    margin: 40px 0 0 0;
+    padding: 20px 0 30px 0;
+    border-top: 1px solid rgba(1, 23, 10, 0.1);
+  }
+  
+  .site-navigation-link {
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .user-navigation-link {
+    position: relative;
+    display: block;
+    padding: 10px 55px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .user-navigation-link::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .user-navigation-item-registation::before {
+    background-image: url("img/user.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .user-navigation-item-about::before {
+    background-image: url("img/about.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .page-main {
+    grid-column: 2 / -1;
+    grid-row: 1 / -2; /* элемент с первой линии до предпоследней */
+  }
+  
+  .page-promo {
+    grid-row: 2 / -2;
+  }
+  
+  .page-footer {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+  }
