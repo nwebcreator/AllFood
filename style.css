@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-columns: 252px 1fr;
+    column-gap: 30px;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 40px;
+
+    min-height: 100vh;
+    padding: 30px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 135%;
+    color: #01170a;
+    background-color: #e5e5e5;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 1380px;
+    margin: 0 auto;
+  }
