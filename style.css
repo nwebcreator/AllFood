@@ -433,6 +433,89 @@ body {
 /* promo */
 .page-promo {
   grid-row: 2 / -2;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(152px, max-content));
+  row-gap: 40px;
+}
+
+.promo-item {
+  position: relative;
+  grid-row: span 2;
+  padding: 10px;
+  max-width: 252px;
+  min-height: 152px;
+  background-color: white;
+  box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07);
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.promo-item-small {
+  grid-row: span 1;
+  text-align: start;
+  background-color: initial;
+}
+
+.promo-item-big {
+  grid-row: span 3;
+}
+
+.promo-img {
+  border-radius: 10px 10px 0 0;
+}
+
+.promo-item-small .promo-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  padding: 0;
+  z-index: -1;
+}
+
+.promo-title {
+  max-width: 80%;
+  margin: 10px auto 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.promo-item p {
+  padding: 0 20px;
+}
+
+.promo-link a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #31b768;
+}
+
+.subscribe-form {
+  padding: 0 10px;
+}
+
+.subscribe-field {
+  padding: 12px 50px 12px 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid rgba(1, 23, 10, 0.2);
+  border-radius: 5px;
+}
+
+.subscribe-button {
+  width: 100%;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 5px;
 }
 
 /* footer */
