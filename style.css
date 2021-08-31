@@ -281,6 +281,155 @@ body {
   color: inherit;
 }
 
+/* catalog */
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  column-gap: 30px;
+  row-gap: 40px;
+  grid-auto-flow: dense;
+}
+
+.catalog-item-medium {
+  grid-row: span 2;
+}
+
+.catalog-item-large {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.catalog-item a {
+  position: relative;
+  display: grid;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07);
+  color: inherit;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.catalog-item-with-border a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  border: 1px dashed #31B768;
+  border-radius: 10px;
+}
+
+.catalog-item-img {
+  margin: 0;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+  grid-row-start: 1;
+}
+
+.catalog-item-title {
+  margin: 10px 20px 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.catalog-item-small .catalog-item-title {
+  margin-top: 20px;
+}
+
+.catalog-item-text {
+  height: 57px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0 20px 18px;
+}
+
+.catalog-item-small .catalog-item-text {
+  height: 38px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 25px;
+}
+
+.catalog-item-info {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.info-item {
+  position: relative;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.info-item dd {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.info-item::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info-item-likes::before {
+  background-image: url("img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.info-item-cooking-time::before {
+  background-image: url("img/timer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.info-item-calories::before {
+  background-image: url("img/energy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.catalog-more-button {
+  align-self: start;
+  grid-column: 1 / -1;
+  width: 252px;
+  margin-left: 282px;
+}
+
+.button {
+  padding: 20px 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+  background: #31B768;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
 /* promo */
 .page-promo {
   grid-row: 2 / -2;
