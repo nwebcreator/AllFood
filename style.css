@@ -67,6 +67,11 @@ body {
   text-decoration: none;
 }
 
+.site-navigation-link:hover {
+  color: white;
+  background-color: #31b768;
+}
+
 .user-navigation-link {
   position: relative;
   display: block;
@@ -270,6 +275,12 @@ body {
   margin-right: 0;
 }
 
+.hashtag-item:hover {
+  color: white;
+  background-color: #31B768;
+  border-radius: 5px;
+}
+
 .hashtag-list a {
   display: inline-block;
   padding: 10px 15px 8px;
@@ -309,6 +320,12 @@ body {
   color: inherit;
   text-decoration: none;
   box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.catalog-item a:hover {
+  transform: scale(1.05)
 }
 
 .catalog-item-with-border a::before {
