@@ -48,37 +48,60 @@
     <main class="page-main">
       <h1 class="visually-hidden">Главная страница сайта готовых рационов AllFood</h1>
       <div class="slider">
-        <img class="slider-img" src="img/slider-photo.jpg" width="1098" height="344" alt="Набор продуктов: морковь, патиссон, перец, лук, помидор, чечевица">
-        <div class="slider-description">
-          <p class="slider-headline">Топ продуктов во время пандемии - где взять витамины C, D и цинк</p>
-          <p class="slider-text">В этом году нам досталось настоящее испытание в виде пандемии, и, кажется, обычный чай тут уже не поможет.</p>
+        <div class="slider-item">
+          <img class="slider-img" src="img/slider-photo.jpg" width="1098" height="344" alt="Набор продуктов: морковь, патиссон, перец, лук, помидор, чечевица">
+          <div class="slider-description">
+            <p class="slider-headline">Топ продуктов во время пандемии - где взять витамины C, D и цинк</p>
+            <p class="slider-text">В этом году нам досталось настоящее испытание в виде пандемии, и, кажется, обычный чай тут уже не поможет.</p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img class="slider-img" src="img/photo-1.jpg" width="1098" height="344" alt="Рулетики из бекона">
+          <div class="slider-description">
+            <p class="slider-headline">Рулетики из бекона</p>
+            <p class="slider-text">Ужасно вкусно. Сытно! Просто и супер универсально. Ведь такое блюдо можно подавать не только в будни, но и на праздники.</p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img class="slider-img" src="img/photo-4.jpg" width="1098" height="344" alt="Пицца Маргарита">
+          <div class="slider-description">
+            <p class="slider-headline">Пицца Маргарита</p>
+            <p class="slider-text">Традиционное итальянское блюде, известное во всем мире. Ее состав очень простой, но вкус не оставляет равнодушным.</p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img class="slider-img" src="img/photo-10.jpg" width="1098" height="344" alt="Тосты с авокадо и шпинатом">
+          <div class="slider-description">
+            <p class="slider-headline">Тосты с авокадо и шпинатом</p>
+            <p class="slider-text">Быстрый и очень полезный завтрак с высоким содержанием насыщенных жиров и клетчатки.</p>
+          </div>
         </div>
         <ul class="slider-controls">
           <li class="slider-controls-item">
-            <button class="slider-controls-button slider-controls-button-active" type="button">
+            <button class="slider-controls-button" type="button" onclick="currentSlide(1)">
               <span class="visually-hidden">1</span>
             </button>
           </li>
           <li class="slider-controls-item">
-            <button class="slider-controls-button" type="button">
+            <button class="slider-controls-button" type="button" onclick="currentSlide(2)">
               <span class="visually-hidden">2</span>
             </button>
           </li>
           <li class="slider-controls-item">
-            <button class="slider-controls-button" type="button">
+            <button class="slider-controls-button" type="button" onclick="currentSlide(3)">
               <span class="visually-hidden">3</span>
             </button>
           </li>
           <li class="slider-controls-item">
-            <button class="slider-controls-button" type="button">
+            <button class="slider-controls-button" type="button" onclick="currentSlide(4)">
               <span class="visually-hidden">4</span>
             </button>
           </li>
-          <li class="slider-controls-item">
+          <!-- <li class="slider-controls-item">
             <button class="slider-controls-button" type="button">
               <span class="visually-hidden">5</span>
             </button>
-          </li>
+          </li> -->
         </ul>
       </div>
       <section class="settings">
@@ -443,6 +466,9 @@
         </article>
         <button class="catalog-more-button button" type="button">Загрузить ещё</button>
       </section>
+        <a href="#" class="scroll-up-link">
+          <span class="visually-hidden">Вернуться в начало</span>
+        </a>
     </main>
     <aside class="page-promo promo">
       <article class="promo-item promo-item-small">
@@ -493,5 +519,6 @@
         </li>
       </ul>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -171,6 +171,8 @@ body {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .slider-controls-button-active {
@@ -179,6 +181,30 @@ body {
 
 .settings {
   margin-bottom: 25px;
+}
+
+.slider-item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
 }
 
 /* sort */
@@ -561,4 +587,45 @@ body {
   list-style: none;
   justify-self: end;
   max-width: 500px;
+}
+
+.scroll-up-link {
+  position: fixed;
+  /* display: none; */
+  bottom: 140px;
+  right: 40px;
+  width: 52px;
+  height: 52px;
+  box-shadow: 0 2px 6px rgba(44, 44, 44, 0.2);
+  border-radius: 30px;
+  background-color: #f4f4f4;
+  opacity: 0;
+}
+
+.scroll-up-link::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 16px;
+  height: 8px;
+  background-image: url("img/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.scroll-up-link-showed {
+  display: block;
+  animation: 0.3s linear btn-showing forwards;
+}
+
+@keyframes btn-showing {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
