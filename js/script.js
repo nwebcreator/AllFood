@@ -7,20 +7,20 @@ window.addEventListener(`scroll`, () => {
   }
 });
 
-let upButton = document.querySelector(`.scroll-up-link`);
+// let upButton = document.querySelector(`.scroll-up-link`);
 
-window.onscroll = function () {
-  if (window.pageYOffset > 50) {
+// window.onscroll = function () {
+//   if (window.pageYOffset > 50) {
 
-    upButton.classList.add(`scroll-up-link-showed`);
-  } else {
-    setTimeout(() => upButton.classList.remove(`scroll-up-link-showed`), 300);
-  }
-};
+//     upButton.classList.add(`scroll-up-link-showed`);
+//   } else {
+//     setTimeout(() => upButton.classList.remove(`scroll-up-link-showed`), 300);
+//   }
+// };
 
-upButton.onclick = function () {
-  window.scrollTo(0, 0);
-};
+// upButton.onclick = function () {
+//   window.scrollTo(0, 0);
+// };
 
 
 /* SLIDER */
